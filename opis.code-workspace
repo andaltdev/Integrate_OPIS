@@ -1,0 +1,130 @@
+{
+  "folders": [
+    {
+      "name": "@ root",
+      "path": "."
+    },
+    {
+      "name": "opis-ips",
+      "path": "opis-ips"
+    },
+    {
+      "name": "opis-cds-agent",
+      "path": "opis-cds-agent"
+    },
+    {
+      "name": "opis-ui-service",
+      "path": "opis-ui-service"
+    },
+    {
+      "name": "opis-web",
+      "path": "opis-web"
+    },
+    {
+      "name": "opis-process-reporting-widget",
+      "path": "opis-process-reporting-widget"
+    },
+    {
+      "name": "opis-connector-all",
+      "path": "opis-connector-all"
+    },
+    {
+      "name": "opis-shared-library",
+      "path": "opis-shared-library"
+    },
+    {
+      "name": "opis-cds-agent-dto",
+      "path": "opis-cds-agent-dto"
+    },
+    {
+      "name": "opis-boomi-api",
+      "path": "opis-boomi-api"
+    },
+    {
+      "name": "opis-boomi-mcp",
+      "path": "opis-boomi-mcp"
+    },
+    {
+      "name": "opis-atom-cloud",
+      "path": "opis-atom-cloud"
+    },
+    {
+      "name": "opis-atom-cloud-self-service",
+      "path": "opis-atom-cloud-self-service"
+    },
+    {
+      "name": "opis-notification-service",
+      "path": "opis-notification-service"
+    },
+    {
+      "name": "opis-notification-service-next",
+      "path": "opis-notification-service-next"
+    },
+    {
+      "name": "opis-availability-tests",
+      "path": "opis-availability-tests"
+    },
+    {
+      "name": "opis-db-provisioner",
+      "path": "opis-db-provisioner"
+    },
+    {
+      "name": "opis-vault-migration-tool",
+      "path": "opis-vault-migration-tool"
+    },
+    {
+      "name": "opis-observability",
+      "path": "opis-observability"
+    },
+    {
+      "name": "integrate-opis-argo-applications",
+      "path": "integrate-opis-argo-applications"
+    }
+  ],
+  "settings": {
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.updateBuildConfiguration": "automatic",
+
+    "files.exclude": {
+      "**/.DS_Store": true,
+      "**/.gradle": true,
+      "**/build": true,
+      "**/node_modules": true,
+      "**/.idea": true
+    },
+
+    "search.exclude": {
+      "**/build": true,
+      "**/node_modules": true,
+      "**/.gradle": true,
+      "**/target": true
+    },
+
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[java]": {
+      "editor.defaultFormatter": "redhat.java"
+    },
+    "[gradle]": {
+      "editor.defaultFormatter": "naco-siren.gradle-language"
+    },
+
+    "typescript.tsdk": "opis-process-reporting-widget/node_modules/typescript/lib",
+
+    "git.autoRepositoryDetection": "openEditors",
+    "git.repositoryScanMaxDepth": 1
+  },
+  "extensions": {
+    "recommendations": [
+      "vscjava.vscode-java-pack",
+      "vmware.vscode-spring-boot",
+      "naco-siren.gradle-language",
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
+      "ms-azuretools.vscode-docker",
+      "ms-kubernetes-tools.vscode-kubernetes-tools",
+      "redhat.vscode-yaml",
+      "eamodio.gitlens"
+    ]
+  }
+}
