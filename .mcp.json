@@ -1,0 +1,29 @@
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": ["@anthropic-ai/mcp-chrome-devtools@latest"]
+    },
+    "azure-devops": {
+      "command": "npx",
+      "args": ["-y", "@anthropic-ai/mcp-azure-devops@latest"],
+      "env": {
+        "AZURE_DEVOPS_ORG": "intappdevops",
+        "AZURE_DEVOPS_PROJECT": "Integrate_OPIS"
+      }
+    },
+    "postgres": {
+      "command": "bash",
+      "args": ["./scripts/postgres-mcp.sh"]
+    },
+    "grafana": {
+      "disabled": true,
+      "command": "npx",
+      "args": ["-y", "@anthropic-ai/mcp-grafana@latest"],
+      "env": {
+        "GRAFANA_URL": "",
+        "GRAFANA_API_KEY": ""
+      }
+    }
+  }
+}

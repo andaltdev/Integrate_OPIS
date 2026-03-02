@@ -1,0 +1,92 @@
+# =============================================================================
+# Integrate_OPIS Root Repository .gitignore
+# =============================================================================
+# This root repo tracks shared config, docs, and tooling only.
+# All microservice repos are cloned as siblings and excluded here.
+
+# -----------------------------------------------------------------------------
+# OS & IDE
+# -----------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.cursor/
+*.swp
+*.swo
+*~
+
+# -----------------------------------------------------------------------------
+# Node.js
+# -----------------------------------------------------------------------------
+node_modules/
+
+# -----------------------------------------------------------------------------
+# Java / Gradle
+# -----------------------------------------------------------------------------
+.gradle/
+build/
+target/
+bin/
+*.class
+*.jar
+*.war
+
+# -----------------------------------------------------------------------------
+# Secrets & Environment
+# -----------------------------------------------------------------------------
+.env
+.env.*
+!.env.*.example
+
+# -----------------------------------------------------------------------------
+# Microservice Repositories (19 git repos)
+# -----------------------------------------------------------------------------
+# ADO repos
+/integrate-opis-argo-applications/
+/opis-atom-cloud/
+/opis-atom-cloud-self-service/
+/opis-availability-tests/
+/opis-boomi-api/
+/opis-boomi-mcp/
+/opis-cds-agent/
+/opis-cds-agent-dto/
+/opis-connector-all/
+/opis-db-provisioner/
+/opis-ips/
+/opis-notification-service/
+/opis-observability/
+/opis-process-reporting-widget/
+/opis-shared-library/
+/opis-ui-service/
+/opis-vault-migration-tool/
+/opis-web/
+
+# GitHub repos
+/opis-notification-service-next/
+
+# -----------------------------------------------------------------------------
+# Non-git Auxiliary Directories
+# -----------------------------------------------------------------------------
+/opis-connector-automation-deploy/
+/opis-logging-connector/
+/opisprometheusremotewritetool/
+
+# -----------------------------------------------------------------------------
+# Tracked Directories (negation - these ARE committed)
+# -----------------------------------------------------------------------------
+!/.claude/
+!/.specify/
+!/specs/
+!/scripts/
+
+# -----------------------------------------------------------------------------
+# Claude Code Personal Files (inside .claude/ but not committed)
+# -----------------------------------------------------------------------------
+.claude/settings.local.json
+.claude/projects/
+.claude/plans/
+.claude/todos/
+.claude/statsig/
+.claude/credentials.json
+.claude/memory/
