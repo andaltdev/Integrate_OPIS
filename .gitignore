@@ -90,3 +90,6 @@ bin/
 .claude/statsig/
 .claude/credentials.json
 .claude/memory/
+.claude/agents/
+.claude/commands/
+.claude/skills/
